@@ -106,7 +106,7 @@ body {
 	to { background-position: -512px; }
 }
 
-@-0-keyframes play {
+ @-o-keyframes play {
 	from { background-position: 0px; }
 	to { background-position: -512px; }
 }
