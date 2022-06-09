@@ -17,14 +17,13 @@ function start () { // Inicio da função start ()
 			W: 87,
 			S: 83,
 			D: 68
-        }
-		
+        }		
 		jogo.pressionou = [];
-		
+	
 		
 	//Verifica se o usuário pressionou alguma tecla	
 	
-	    $(document).keydown(function(e){
+	$(document).keydown(function(e){
         jogo.pressionou[e.which] = true;
         });
     
@@ -60,30 +59,29 @@ function start () { // Inicio da função start ()
 			
 		 function movejogador() {
 	
-            if (jogo.pressionou[TECLA.W]) {
-                var topo = parseInt($("#jogador").css("top"));
-                $("#jogador").css("top",topo-10);       
+		    if (jogo.pressionou[TECLA.W]) {
+			var topo = parseInt($("#jogador").css("top"));
+			$("#jogador").css("top",topo-10);       
 
-				if (topo <= 0) {
-					$ ("#jogador").css("top", topo+10);
-				}	           
-            }
-            
-            if (jogo.pressionou[TECLA.S]) {
-                
-                var topo = parseInt($("#jogador").css("top"));
-                $("#jogador").css("top",topo+10);   
+					if (topo <= 0) {
+						$ ("#jogador").css("top", topo+10);
+					}	           
+		    }
 
-				if (topo >= 434) {
-					$ ("#jogador").css("top", topo-10);
-				}	
-            
-            }
-            
-            if (jogo.pressionou[TECLA.D]) {
-               
-                //Chama função Disparo	
-            }
+		    if (jogo.pressionou[TECLA.S]) {
+
+			var topo = parseInt($("#jogador").css("top"));
+			$("#jogador").css("top",topo+10);   
+
+					if (topo >= 434) {
+						$ ("#jogador").css("top", topo-10);
+					}            
+		    }
+
+		    if (jogo.pressionou[TECLA.D]) {
+
+			//Chama função Disparo	
+		    }
         
 		} // Fim da função movejogador()
 		
