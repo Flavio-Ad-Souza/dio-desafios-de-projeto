@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: rgb(208,255, 239);
+    background-color: rgb(208, 255, 239);
 }
 
 .main-game {
@@ -13,9 +13,9 @@ body {
 
 .genius {
     display: grid;
-    grid-template-areas: 'verde vermelho' 'amarelo azul';
-    /* grid-gap - é uma propriedade obsoleta (usar apenas gap) */
-    gap: 10px; 
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 10px;
     border: 1px solid #ffffff;
     background-color: #ffffff;
     border-radius: 100%;
@@ -48,5 +48,5 @@ body {
 }
 
 .selected {
-    opacity: 0.8;
+    opacity: 0.2;
 }
