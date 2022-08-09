@@ -1,2 +1,2 @@
 # dio-desafios-de-projeto
-Desafios de Projeto do Bootcamp Órbi Web Games Develope
+Desafios de Projeto do Bootcamp Órbi Web Games Develope e HTML Web Developer
